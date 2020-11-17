@@ -4,7 +4,8 @@ import (
 	"fmt"
 	"math/rand"
 	"time"
-	//import Wordwriter somehow
+
+	"github.com/wazza029/vocabularybuilder/newwords"
 )
 
 var database = map[string]string{}
@@ -15,11 +16,11 @@ var correctTranslation string
 
 func main() {
 
-	WordWriter("amigo", "friend", database)
-	WordWriter("casa", "house", database)
-	WordWriter("dinero", "money", database)
-	WordWriter("desayuno", "breakfast", database)
-	WordWriter("barato", "cheap", database)
+	newwords.WordWriter("amigo", "friend", database)
+	newwords.WordWriter("casa", "house", database)
+	newwords.WordWriter("dinero", "money", database)
+	newwords.WordWriter("desayuno", "breakfast", database)
+	newwords.WordWriter("barato", "cheap", database)
 
 	word = RandomWord(database)
 	fmt.Println(word)
