@@ -1,1 +1,1 @@
-{"amigo":"friend"}
+{"amigo":"friend","casa":"house","dinero":"money"}
